@@ -77,6 +77,19 @@ a {
   padding-right: 24px;
 }
 
+/* Visually hidden but accessible for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -371,11 +384,33 @@ section {
 
 .mobile-nav-toggle {
   display: none;
-  background: transparent;
-  border: none;
+  background: rgba(250, 249, 246, 0.9);
+  border: 1.5px solid rgba(164, 111, 51, 0.18);
+  border-radius: var(--border-radius-pill);
   cursor: pointer;
-  padding: 8px;
+  padding: 10px 16px;
   z-index: 1001;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.mobile-nav-toggle:hover {
+  background: var(--primary-light);
+  border-color: rgba(164, 111, 51, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger,
+.mobile-nav-toggle[aria-expanded="true"] .hamburger::before,
+.mobile-nav-toggle[aria-expanded="true"] .hamburger::after {
+  background-color: #ffffff;
 }
 
 /* Hero Section */
@@ -1617,25 +1652,29 @@ section {
   
   /* Hamburger Icon */
   .hamburger {
-    width: 22px;
+    width: 20px;
     height: 2px;
-    background-color: var(--text-dark);
+    background-color: var(--primary-color);
     position: relative;
     transition: var(--transition-smooth);
+    border-radius: 2px;
   }
   
   .hamburger::before,
   .hamburger::after {
     content: '';
     position: absolute;
-    width: 22px;
+    width: 20px;
     height: 2px;
-    background-color: var(--text-dark);
+    background-color: var(--primary-color);
     transition: var(--transition-smooth);
+    border-radius: 2px;
   }
   
   .hamburger::before {
     top: -6px;
+    width: 14px;
+    right: 0;
   }
   
   .hamburger::after {
@@ -1649,6 +1688,7 @@ section {
   .mobile-nav-toggle[aria-expanded="true"] .hamburger::before {
     transform: rotate(45deg);
     top: 0;
+    width: 20px;
   }
   
   .mobile-nav-toggle[aria-expanded="true"] .hamburger::after {
