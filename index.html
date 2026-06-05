@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Lívia Brito | Psicoterapia On-line e Neuropsicologia</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Atendimento psicológico acolhedor, leve e técnico no conforto da sua casa. Psicoterapia on-line, Avaliação Neuropsicológica e Consultoria com a Psicóloga Lívia Brito.">
+  <meta name="keywords" content="Psicóloga, Lívia Brito, Psicoterapia On-line, Neuropsicologia, Avaliação Neuropsicológica, Saúde Mental, Logoterapia, Salvador, CRP 03/11748">
+  <meta name="author" content="Lívia Brito">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://psiliviabrito.my.canva.site/"> <!-- Será atualizado pelo usuário com o link final da Vercel -->
+  <meta property="og:title" content="Psicóloga Lívia Brito | Psicoterapia On-line e Neuropsicologia">
+  <meta property="og:description" content="Atendimento psicológico acolhedor, leve e técnico no conforto da sua casa. Cuide da sua saúde mental com leveza.">
+  <meta property="og:image" content="images/profile.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header id="main-header" class="header">
+    <div class="header-container container">
+      <a href="#inicio" class="logo" id="logo-nav">
+        <span class="logo-title">Lívia Brito</span>
+        <span class="logo-subtitle">Psicóloga</span>
+      </a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" id="menu-toggle-btn">
+        <span class="sr-only">Menu</span>
+        <div class="hamburger"></div>
+      </button>
+
+      <nav id="primary-navigation" class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active" id="nav-link-inicio">Início</a></li>
+          <li><a href="#sobre" class="nav-link" id="nav-link-sobre">Sobre Mim</a></li>
+          <li><a href="#servicos" class="nav-link" id="nav-link-servicos">Serviços</a></li>
+          <li><a href="#formacao" class="nav-link" id="nav-link-formacao">Formação</a></li>
+          <li><a href="#jornada" class="nav-link" id="nav-link-jornada">Jornada</a></li>
+          <li><a href="#faq" class="nav-link" id="nav-link-faq">FAQ</a></li>
+          <li><a href="#contato" class="nav-link" id="nav-link-contato">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/5571999257447" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-btn" id="nav-cta-whatsapp">
+          Agendar Consulta
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Overlay de fundo para o menu mobile -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-container grid-2">
+        <div class="hero-content reveal">
+          <div class="hero-brand-intro">
+            <span class="hero-intro-name">Lívia Brito</span>
+            <span class="hero-intro-subtitle">Psicóloga e Neuropsicóloga</span>
+          </div>
+          <h1 class="hero-title">Autenticidade e leveza no seu processo.</h1>
+          <div class="hero-ctas">
+            <a href="https://wa.me/5571999257447" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large ripple" id="hero-btn-whatsapp">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Iniciar Acompanhamento
+            </a>
+            <a href="#sobre" class="btn btn-secondary btn-large" id="hero-btn-sobre">Conheça o meu trabalho</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper reveal">
+          <div class="decor-dots"></div>
+          <div class="decor-shape-wrapper">
+            <svg class="decor-shape" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Forma fluida orgânica sutil -->
+              <path d="M40,110 C30,45 80,30 145,35 C175,70 180,120 150,155 C120,185 75,175 40,110 Z" fill="var(--secondary-color)" opacity="0.18" />
+            </svg>
+          </div>
+          <img src="images/extra-3.jpg" alt="Fotografia de Lívia Brito" class="hero-image">
+        </div>
+      </div>
+      
+      <!-- Waves separator -->
+      <div class="wave-separator">
+        <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#EFECE6"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section bg-muted">
+      <div class="container about-container grid-2-wide">
+        <div class="about-images reveal">
+          <div class="about-image-arch-wrapper">
+            <div class="about-image-green-bar"></div>
+            <img src="images/sobre mim.jpg" alt="Psicóloga Lívia Brito" class="about-image-arch">
+          </div>
+          <div class="card-testimonial">
+            <span class="crp-label">Registro Profissional</span>
+            <p class="crp-number">CRP 03/11748</p>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag">Boas-vindas!</span>
+          <h2 class="section-title">Oi! Eu sou Lívia Brito.</h2>
+          <div class="about-text">
+            <p class="lead-text">Quem foi que disse que para cuidar da saúde mental precisa ser difícil ou muito complicado?</p>
+            <p>Aqui é o começo do nosso <strong>território de acolhimento</strong>, onde caminharei com você entre a <strong>técnica</strong> profissional e a <strong>sensibilidade</strong> de poder enxergar a <strong>autenticidade da sua história</strong>, para além de um diagnóstico.</p>
+            <p>Meu propósito é tornar o cuidado da saúde mental acessível, simples e leve (quando possível). E assim, aliviar o sofrimento e promover saúde de forma integrada e consciente.</p>
+            <p>Em meus atendimentos, você terá <strong>presença</strong> e <strong>afeto</strong> dedicados a cada detalhe do seu <strong>plano psicoterapêutico</strong> desenhado para sua rotina, preferências e objetivos. Tudo isso para criar um espaço dinâmico de <strong>autoconhecimento</strong> com informações importantes para facilitar a <strong>mudança</strong> positiva de comportamentos, bem como a manutenção de hábitos e <strong>estilos de vida</strong> mais saudáveis.</p>
+            <p class="closing-text">Será uma honra acompanhar seu processo!</p>
+          </div>
+          <a href="#contato" class="btn btn-tertiary" id="about-btn-contato">Falar Diretamente Comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Atuação Clínica</span>
+          <h2 class="section-title">Como posso te ajudar</h2>
+          <p class="section-subtitle">Diferentes caminhos de cuidado psicológico pensados sob medida para o seu momento de vida.</p>
+        </div>
+        
+        <div class="services-grid grid-3 reveal">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="card-image-wrapper">
+              <img src="images/servico-1.jpg" alt="Psicoterapia On-line" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Psicoterapia On-line</h3>
+              <p class="card-description">Seu acompanhamento psicológico no conforto do seu ambiente. Consultas seguras e flexíveis por meio de videochamadas, mantendo o acolhimento sem barreiras geográficas.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="card-image-wrapper">
+              <img src="images/te ajudar.jpg" alt="Avaliação Neuropsicológica" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Avaliação Neuropsicológica</h3>
+              <p class="card-description">Processo dinâmico de investigação para mapear as funções cognitivas (como memória, atenção, linguagem e raciocínio), auxiliando no diagnóstico e planejamento de reabilitação personalizada.</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="card-image-wrapper">
+              <img src="images/consul e treino.jpeg" alt="Consultoria e Treinamento" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Consultoria e Treinamento</h3>
+              <p class="card-description">Espaços de diálogo psicoeducativo e encontros formativos com o objetivo de levar informação acessível, acolhimento prático e reflexões relevantes sobre saúde mental para grupos e corporações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Background Section -->
+    <section id="formacao" class="academic-section">
+      <div class="container academic-grid reveal">
+        <div class="academic-content">
+          <span class="section-tag">Credenciais</span>
+          <h2 class="section-title">Formação acadêmica</h2>
+          <p class="academic-intro">Base sólida de estudos e prática para oferecer um atendimento científico, atualizado e ético.</p>
+          
+          <ul class="academic-list">
+            <li>
+              <div class="bullet-point"></div>
+              <div>
+                <h4>Especialização em Saúde Mental</h4>
+                <p>Saúde Mental e Atenção Psicossocial</p>
+              </div>
+            </li>
+            <li>
+              <div class="bullet-point"></div>
+              <div>
+                <h4>Logoterapia e Análise Existencial</h4>
+                <p>Abordagem focada na busca por sentido da existência humana</p>
+              </div>
+            </li>
+            <li>
+              <div class="bullet-point"></div>
+              <div>
+                <h4>Residência Multiprofissional</h4>
+                <p>Residência com foco e atuação direta em Neurologia</p>
+              </div>
+            </li>
+            <li>
+              <div class="bullet-point"></div>
+              <div>
+                <h4>Especialização em Neuropsicologia</h4>
+                <p>Foco na relação entre o cérebro, comportamento e cognição</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="academic-photo-wrapper">
+          <img src="images/formacao.jpg" alt="Psicóloga Lívia Brito" class="academic-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="jornada" class="journey-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Como Começar</span>
+          <h2 class="section-title">Sua jornada começa por aqui!</h2>
+          <p class="section-subtitle">Um caminho prático e simplificado para agendar e realizar suas consultas.</p>
+        </div>
+        
+        <div class="timeline grid-3 reveal">
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="step-number">01</div>
+            <h3 class="step-title">O primeiro passo</h3>
+            <p class="step-desc">Você me envia uma mensagem inicial por meio do WhatsApp ou Instagram de forma simples e direta.</p>
+            <div class="step-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="step-number">02</div>
+            <h3 class="step-title">A escolha do horário</h3>
+            <p class="step-desc">Encontramos juntas um momento na nossa agenda que seja compatível com a sua rotina semanal.</p>
+            <div class="step-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Nosso momento</h3>
+            <p class="step-desc">Em um ambiente silencioso, com fones de ouvido e conexão segura. Iniciamos as sessões focadas na sua evolução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section bg-muted">
+      <div class="container grid-2-aside">
+        <div class="faq-intro reveal">
+          <span class="section-tag">Dúvidas Comuns</span>
+          <h2 class="section-title">Perguntas frequentes</h2>
+          <p class="faq-text-body">Abaixo estão esclarecidas as principais dúvidas sobre o processo psicoterápico e formas de atendimento.</p>
+          <div class="faq-box">
+            <h4>Ainda com dúvidas?</h4>
+            <p>Se sua dúvida não estiver respondida ao lado, fale direto comigo pelo WhatsApp!</p>
+            <a href="https://wa.me/5571999257447" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small" id="faq-whatsapp-btn">Fale no WhatsApp</a>
+          </div>
+        </div>
+        
+        <div class="faq-accordions reveal">
+          <!-- Item 1 -->
+          <div class="accordion-item" id="faq-item-1">
+            <button class="accordion-header" aria-expanded="false" id="faq-btn-1">
+              <span>Como saber se eu preciso de Psicoterapia?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-content" aria-hidden="true" id="faq-content-1">
+              <div class="accordion-body">
+                <p>A Psicoterapia é um processo contínuo de acolhimento e autoconhecimento. Ela é indicada para quando você deseja cuidar da sua saúde mental, aprender a lidar com a ansiedade, atravessar fases de mudança, dores emocionais ou simplesmente melhorar sua relação consigo mesma e com os outros no dia a dia. Se você ainda estiver na dúvida, não se preocupe! Na nossa primeira conversa, nós identificamos juntas qual é o melhor caminho para o seu momento.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="accordion-item" id="faq-item-2">
+            <button class="accordion-header" aria-expanded="false" id="faq-btn-2">
+              <span>Qual a duração de cada sessão?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-content" aria-hidden="true" id="faq-content-2">
+              <div class="accordion-body">
+                <p>As sessões acontecem uma vez por semana e duram aproximadamente 50 minutos.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="accordion-item" id="faq-item-3">
+            <button class="accordion-header" aria-expanded="false" id="faq-btn-3">
+              <span>Como funcionam as sessões de Psicoterapia?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-content" aria-hidden="true" id="faq-content-3">
+              <div class="accordion-body">
+                <p>É o seu território de acolhimento, iremos no seu ritmo. Não há um "roteiro rígido": nós conversamos sobre o que está pesado na sua rotina, cruzamos a técnica com o afeto e construímos ferramentas práticas para facilitar mudanças positivas de comportamento e hábitos mais saudáveis no seu dia a dia.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="accordion-item" id="faq-item-4">
+            <button class="accordion-header" aria-expanded="false" id="faq-btn-4">
+              <span>Você atende convênio ou apenas particular?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-content" aria-hidden="true" id="faq-content-4">
+              <div class="accordion-body">
+                <p>Meus atendimentos são exclusivamente particulares. Isso me permite dedicar tempo de verdade a cada detalhe do seu plano psicoterapêutico ou da sua avaliação, desenhando algo sob medida para a sua rotina e objetivos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & CTA Section -->
+    <section id="contato" class="contact-section">
+      <div class="container grid-2-wide reveal">
+        <div class="contact-details">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Ficou com mais alguma dúvida?</h2>
+          <p class="contact-text">Se a sua pergunta não está aqui ou se você quer entender melhor como posso te ajudar no seu caso específico, basta entrar em contato. Será uma honra atender você!</p>
+          
+          <div class="contact-channels">
+            <!-- WhatsApp Item -->
+            <a href="https://wa.me/5571999257447" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-link-whatsapp">
+              <div class="contact-icon-box whatsapp-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Fale pelo WhatsApp</span>
+                <span class="channel-value">71 99925-7447</span>
+              </div>
+            </a>
+            
+            <!-- Instagram Item -->
+            <a href="https://www.instagram.com/psi.liviabrito/" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-link-instagram">
+              <div class="contact-icon-box instagram-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Acompanhe no Instagram</span>
+                <span class="channel-value">@psi.liviabrito</span>
+              </div>
+            </a>
+            
+            <!-- Email Item -->
+            <a href="mailto:psi.liviabrito@gmail.com" class="contact-item" id="contact-link-email">
+              <div class="contact-icon-box email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Envie um E-mail</span>
+                <span class="channel-value">psi.liviabrito@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quote Side / Decorative card -->
+        <div class="contact-decor-card">
+          <div class="decor-quotes">“</div>
+          <blockquote class="decor-quote">
+            “O preço de qualquer coisa é a quantidade de vida que você troca por isso.”
+            <cite class="decor-cite">Henry David Thoreau</cite>
+          </blockquote>
+          <div class="clinic-badge">
+            <span class="badge-icon">🌿</span>
+            <span class="badge-text">Território de Acolhimento e Autocuidado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-top grid-3-wide">
+        <div class="footer-info">
+          <span class="footer-logo">Lívia Brito</span>
+          <p class="footer-about">Psicoterapia On-line e Avaliação Neuropsicológica baseada no afeto, acolhimento e compromisso ético-científico.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal-crp">
+          <h4>Conselho de Psicologia</h4>
+          <p>Lívia Brito de Souza</p>
+          <p class="crp-badge-small">CRP 03/11748</p>
+          <p class="disclaimer-text">Atendimento em conformidade com o Código de Ética Profissional do Psicólogo e credenciado no e-Psi.</p>
+        </div>
+      </div>
+      
+      <hr class="footer-divider">
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Lívia Brito. Todos os direitos reservados.</p>
+        <p class="dev-tag">Feito com cuidado e afeto 🌿</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5571999257447" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Fale comigo no WhatsApp" id="wa-floating-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor" class="wa-floating-icon">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
