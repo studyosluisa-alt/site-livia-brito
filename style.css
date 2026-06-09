@@ -488,6 +488,27 @@ section {
   min-height: 480px;
 }
 
+/* Formas orgânicas verdes decorativas — camada de fundo */
+.hero-green-decor {
+  position: absolute;
+  inset: -40px;
+  z-index: 0;
+  pointer-events: none;
+  animation: green-drift 10s ease-in-out infinite;
+}
+
+.green-decor-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes green-drift {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%       { transform: translate(6px, -8px) scale(1.02); }
+  66%       { transform: translate(-5px, 5px) scale(0.99); }
+}
+
+
 /* Anel decorativo animado ao redor da foto */
 .hero-image-ring {
   position: absolute;
