@@ -488,13 +488,15 @@ section {
   min-height: 480px;
 }
 
-/* Formas orgânicas verdes decorativas — camada de fundo */
+/* Formas geométricas verdes decorativas — coluna vertical à direita */
 .hero-green-decor {
   position: absolute;
-  inset: -40px;
+  right: -30px;
+  top: 0;
+  width: 130px;
+  height: 100%;
   z-index: 0;
   pointer-events: none;
-  animation: green-drift 10s ease-in-out infinite;
 }
 
 .green-decor-svg {
@@ -502,53 +504,7 @@ section {
   height: 100%;
 }
 
-@keyframes green-drift {
-  0%, 100% { transform: translate(0px, 0px) scale(1); }
-  33%       { transform: translate(6px, -8px) scale(1.02); }
-  66%       { transform: translate(-5px, 5px) scale(0.99); }
-}
 
-
-/* Anel decorativo animado ao redor da foto */
-.hero-image-ring {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(164, 111, 51, 0.22);
-  z-index: 1;
-  animation: ring-pulse 4s ease-in-out infinite;
-}
-
-.hero-image-ring::before {
-  content: '';
-  position: absolute;
-  inset: 18px;
-  border-radius: 50%;
-  border: 1px dashed rgba(184, 197, 147, 0.35);
-  animation: ring-spin 18s linear infinite;
-}
-
-@keyframes ring-pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.03); opacity: 0.65; }
-}
-
-@keyframes ring-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-/* Brilho de fundo (glow suave) */
-.hero-image-bg-glow {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(184, 197, 147, 0.25) 0%, rgba(164, 111, 51, 0.08) 55%, transparent 75%);
-  z-index: 1;
-  filter: blur(12px);
-}
 
 /* Pontos decorativos */
 .decor-dots {
@@ -1495,16 +1451,12 @@ section {
     min-height: 320px;
   }
   
-  .hero-image-ring {
-    width: 260px;
-    height: 260px;
+  .hero-green-decor {
+    width: 90px;
+    right: -10px;
   }
   
-  .hero-image-bg-glow {
-    width: 230px;
-    height: 230px;
-  }
-  
+
   .hero-image {
     width: 220px;
     height: 220px;
