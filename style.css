@@ -488,14 +488,15 @@ section {
   min-height: 480px;
 }
 
-/* Formas geométricas verdes decorativas — coluna vertical à direita */
+/* Formas geométricas verdes — coluna vertical parcialmente atrás da foto */
 .hero-green-decor {
   position: absolute;
-  right: -30px;
-  top: 0;
-  width: 130px;
-  height: 100%;
-  z-index: 0;
+  left: calc(50% + 80px);   /* começa dentro da borda direita da foto (foto tem 150px de raio) */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 440px;
+  z-index: 0;               /* ATRÁS da foto (z-index: 3) */
   pointer-events: none;
 }
 
@@ -1452,10 +1453,10 @@ section {
   }
   
   .hero-green-decor {
-    width: 90px;
-    right: -10px;
+    left: calc(50% + 55px);  /* foto mobile: 110px de raio */
+    width: 110px;
+    height: 310px;
   }
-  
 
   .hero-image {
     width: 220px;
