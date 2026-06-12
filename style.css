@@ -1549,6 +1549,15 @@ section {
   }
   
   /* Academic Section Mobile */
+  .academic-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .academic-photo {
+    height: 400px;
+  }
+
   .academic-intro {
     font-size: 16px;
     margin-bottom: 30px;
